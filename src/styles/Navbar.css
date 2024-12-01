@@ -1,0 +1,138 @@
+/* General styling for the navbar */
+.navbar {
+  background-color: #1f2937; /* Xanh đen trầm */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 15px 30px; /* Padding thoáng hơn */
+  position: fixed; /* Cố định thanh điều hướng */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ sâu hơn */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 28px; /* Logo lớn hơn */
+  font-weight: bold;
+  color: #ffbf00; /* Vàng ánh kim */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+/* Logo hover effect */
+.navbar .logo:hover {
+  color: #ffd700; /* Vàng sáng hơn khi hover */
+}
+
+/* Styling the nav links container */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+}
+
+/* Styling individual nav links */
+.navbar .nav-links li {
+  margin: 0 20px; /* Khoảng cách thoáng hơn giữa các liên kết */
+}
+
+/* Styling for the links */
+.navbar .nav-links a {
+  color: #ffffff; /* Màu trắng */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 16px; /* Padding lớn hơn */
+  text-transform: capitalize;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on nav links */
+.navbar .nav-links a:hover {
+  background-color: #2563eb; /* Xanh sáng */
+  color: #ffffff; /* Chữ trắng */
+  transform: translateY(-3px); /* Hiệu ứng nổi */
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); /* Thêm bóng đổ khi hover */
+}
+
+/* Active link */
+.navbar .nav-links a.active {
+  background-color: #14b8a6; /* Xanh ngọc */
+  color: #ffffff;
+}
+
+/* Hamburger menu (mobile) styling */
+.navbar-toggle {
+  display: none; /* Ẩn mặc định */
+  background-color: #1f2937; /* Nền tối */
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger hover effect */
+.navbar-toggle:hover {
+  background-color: #2563eb; /* Xanh sáng hơn khi hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* Hiển thị hamburger khi màn hình nhỏ */
+  }
+
+  .navbar-collapse {
+    display: none; /* Ẩn menu mặc định */
+    flex-direction: column;
+    align-items: flex-end; /* Align links to the right */
+    background-color: #1f2937; /* Nền tối */
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0; /* Align the menu to the right side */
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ */
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-collapse.open {
+    display: flex; /* Hiển thị menu khi toggle */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Sắp xếp các liên kết theo chiều dọc */
+    align-items: flex-end; /* Align the items to the right */
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 5px; /* Khoảng cách 5px giữa các liên kết */
+    width: 100%; /* Chiếm hết chiều rộng */
+    text-align: right; /* Canh phải các liên kết */
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 14px 20px; /* Padding lớn hơn cho mobile */
+    width: 100%; /* Lấp đầy chiều rộng của mục */
+    text-align: right; /* Canh phải */
+  }
+}

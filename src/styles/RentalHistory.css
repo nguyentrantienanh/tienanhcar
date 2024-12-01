@@ -1,0 +1,103 @@
+/* RentalHistory.css */
+.rental-history {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .rental-history-header {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr; /* Adjust column sizes */
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .header-item {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .rental-history-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .rental-history-item {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .cancelled {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+    background-color: #f9d6d6; /* Lighter background for cancelled rentals */
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-self: center;
+  }
+  
+  button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .rental-history-row button {
+    align-self: center; /* Center the button in the grid */
+  }
+  
+  .rental-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .rental-car {
+    flex: 2;
+    padding-left: 10px;
+  }
+  
+  .cancelled {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Optional: Adding hover effect for rows */
+  .rental-history-row:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .rental-history-row button {
+    align-self: center; /* Center the button in the row */
+    margin-left: 10px;
+  }
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  

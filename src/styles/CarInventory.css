@@ -1,0 +1,216 @@
+/* Root variables for theme */
+:root {
+    --primary-color: #4caf50;
+    --primary-color-dark: #388e3c;
+    --secondary-color: #636e72;
+    --background-color: #f9f9f9;
+    --card-background: #ffffff;
+    --text-color: #2c3e50;
+    --font-small: 0.9rem;
+    --font-medium: 1rem;
+    --font-large: 1.2rem;
+    --font-xlarge: 1.5rem;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Global styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+  
+  /* Layout container */
+  .inventory-container {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr; /* Left: 67%, Right: 33% */
+    gap: 30px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  /* Form section */
+  .form-container {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-container:hover {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-5px);
+  }
+  
+  .form-container h2 {
+    font-size: var(--font-large);
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-size: var(--font-small);
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  input, select, textarea {
+    padding: 12px 15px;
+    font-size: var(--font-medium);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+  }
+  
+  /* Car list section */
+  .inventory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inventory-list h2 {
+    font-size: var(--font-large);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Car card styles */
+  .car-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .car-item:hover {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-5px);
+  }
+  
+  .car-item img {
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+  }
+  
+  .car-item div {
+    flex: 1;
+  }
+  
+  .car-item h3 {
+    font-size: var(--font-medium);
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  .car-item p {
+    font-size: var(--font-small);
+    color: var(--secondary-color);
+    margin: 5px 0;
+  }
+  
+  .car-item .price {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .car-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: var(--font-medium);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .car-item button:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .inventory-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      padding: 10px;
+    }
+  
+    .form-container, .inventory-list {
+      padding: 15px;
+    }
+  
+    .car-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .car-item img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+  }
+  

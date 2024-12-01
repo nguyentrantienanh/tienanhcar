@@ -1,0 +1,114 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background-color: #1f2937; /* Dark blue-gray */
+  color: #f4f7fc; /* Light white */
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Left, Center, Right */
+  align-items: center; /* Center vertically */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  gap: 30px; /* Space between sections */
+}
+
+/* Left Section */
+.footer-left {
+  flex: 1; /* Balanced width */
+  text-align: left; /* Align text to the left */
+  padding-right: 20px;
+}
+
+.footer-left h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffbf00; /* Gold color */
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-left a {
+  color: #56ccf2; /* Light blue link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+  color: #2f80ed; /* Darker blue on hover */
+}
+
+/* Center Section */
+.footer-center {
+  flex: 1; /* Balanced width */
+  text-align: center; /* Center the content */
+  padding: 0 20px;
+}
+
+.footer-center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+  justify-content: center;
+}
+
+.footer-center li {
+  font-size: 0.9rem;
+}
+
+.footer-center .link {
+  color: #f4f7fc; /* Light white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-center .link:hover {
+  color: #56ccf2; /* Light blue on hover */
+}
+
+/* Right Section */
+.footer-right {
+  flex: 1; /* Balanced width */
+  text-align: right; /* Align text to the right */
+  padding-left: 20px;
+}
+
+.footer-right p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    text-align: center; /* Center-align all text */
+    gap: 20px;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    text-align: center; /* Center-align content */
+    padding: 0;
+  }
+
+  .footer-center ul {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Add spacing between links */
+  }
+}

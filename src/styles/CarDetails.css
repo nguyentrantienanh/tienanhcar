@@ -1,0 +1,96 @@
+/* Global variables */
+:root {
+    --primary-color: #3498db;
+    --primary-color-dark: #2980b9;
+    --secondary-color: #636e72;
+    --background-color: #f4f7fc;
+    --text-color: #2c3e50;
+    --font-small: 0.9rem;
+    --font-medium: 1rem;
+    --font-large: 1.2rem;
+    --font-xlarge: 1.5rem;
+  }
+  
+  /* General styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .car-details-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    font-size: var(--font-medium);
+  }
+  
+  .car-details-container h1 {
+    font-size: var(--font-xlarge);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .car-details-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  
+  .car-details-container p {
+    font-size: var(--font-medium);
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .car-details-container p strong {
+    color: var(--primary-color);
+  }
+  
+  .car-details-container button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+  }
+  
+  .car-details-container button:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .car-details-container {
+      padding: 20px;
+    }
+  
+    .car-details-container h1 {
+      font-size: var(--font-large);
+    }
+  
+    .car-details-container img {
+      max-height: 300px;
+    }
+  
+    .car-details-container button {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,88 @@
+
+
+.car-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+    position: relative;
+}
+
+.car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.car-item img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.car-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.car-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.car-item p {
+    font-size: 1rem;
+    color: #636e72;
+    margin: 5px 0;
+}
+
+.car-item .price {
+    font-weight: bold;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.car-item button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.car-item button:hover {
+    background-color: #2980b9;
+}
+
+/* Best choice styling */
+.best-choice {
+    border: 3px solid #e74c3c; /* Bold red border */
+    background-color: #f9f9f9; /* Slightly lighter background */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the label */
+}
+
+
+
+.best-choice::before {
+    content: "Hàng mới!";
+    position: absolute;
+    top: -5px; /* Đẩy nó lên trên một chút */
+    right: -10px; /* Đẩy ra ngoài bên phải một chút */
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 3px;
+    text-transform: uppercase;
+    z-index: 10; /* Đảm bảo thẻ "Best!" hiển thị trên phần tử */
+}
+
+.best-choice .car-details h3 {
+    color: #e74c3c; /* Change the title color to match the border */
+}

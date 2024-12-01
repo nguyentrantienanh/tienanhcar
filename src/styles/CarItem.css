@@ -1,0 +1,174 @@
+/* Best choice styling */
+.best-choice {
+  border: 3px solid #e74c3c; /* Bold red border */
+  background-color: #f9f9f9; /* Slightly lighter background */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative; /* For positioning the label */
+  padding-top: 30px; /* To make room for the label */
+}
+
+.best-choice::before {
+  content: "Best!";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 15px; /* Added more padding */
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px; /* More rounded corners */
+  text-transform: uppercase; /* Make the label uppercase */
+  letter-spacing: 1px; /* Slight space between letters */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow to make it stand out */
+}
+
+.best-choice .car-details h3 {
+  color: #e74c3c; /* Change the title color to match the border */
+  font-weight: bold;
+}
+
+/* CarItem styling */
+.car-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.car-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image doesn't get distorted */
+}
+
+.car-details {
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+  line-height: 1.5; /* Better line spacing */
+}
+
+.details-link {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+.rent-button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rent-button:hover {
+  background-color: #2980b9;
+}
+
+.rental-form {
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Slight background to distinguish from card */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rental-form div {
+  margin-bottom: 10px;
+}
+
+.rental-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333; /* Darker text for readability */
+}
+
+.rental-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.rental-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.rental-form button {
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rental-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .car-item {
+      padding: 15px;
+  }
+
+  .car-details h3 {
+      font-size: 18px;
+  }
+
+  .car-item .car-image {
+      border-radius: 5px;
+  }
+
+  .rent-button {
+      padding: 8px;
+  }
+
+  .rental-form {
+      margin-top: 10px;
+      padding: 10px;
+  }
+
+  .rental-form input,
+  .rental-form button {
+      font-size: 14px;
+  }
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
