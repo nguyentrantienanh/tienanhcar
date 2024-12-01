@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/tienanhcar/static/css/main.3f161c25.css",
+    "main.js": "/tienanhcar/static/js/main.cb3587e2.js",
+    "static/media/bannerhome.png": "/tienanhcar/static/media/bannerhome.42b7f0c1a2ef0f6cd7d1.png",
+    "static/media/VinFastKlaraA2.png": "/tienanhcar/static/media/VinFastKlaraA2.862ddc940c717ae3805b.png",
+    "static/media/banner.jpg": "/tienanhcar/static/media/banner.b929e90746bee01a62ae.jpg",
+    "static/media/VinFastTheon.jpg": "/tienanhcar/static/media/VinFastTheon.9055f9dc4239b6e173bc.jpg",
+    "static/media/VinFastTheonS.png": "/tienanhcar/static/media/VinFastTheonS.b85af873795c5b28729a.png",
+    "static/media/VinFastFelizS.jpg": "/tienanhcar/static/media/VinFastFelizS.ee98ca194bf28a47205e.jpg",
+    "static/media/VinFastLudo.jpg": "/tienanhcar/static/media/VinFastLudo.524d6e83038d179f0e96.jpg",
+    "static/media/VF9.jpg": "/tienanhcar/static/media/VF9.7f361cfee1ade3b85316.jpg",
+    "static/media/VinFastEvo200.jpg": "/tienanhcar/static/media/VinFastEvo200.31c7cf4c32f0a0683fd8.jpg",
+    "static/media/logotitle.png": "/tienanhcar/static/media/logotitle.8185cf1ca59c8c978e2a.png",
+    "static/media/VinFastImpes.jpg": "/tienanhcar/static/media/VinFastImpes.892dfde04b48ebb0d5cc.jpg",
+    "static/media/VF8.jpg": "/tienanhcar/static/media/VF8.69d52b7f80b8cee30bab.jpg",
+    "static/media/VF5.jpg": "/tienanhcar/static/media/VF5.50be6980cf7ad67904bc.jpg",
+    "static/media/VinFastVento.png": "/tienanhcar/static/media/VinFastVento.8d379cad3fad81c18cb8.png",
+    "static/media/VF3.jpg": "/tienanhcar/static/media/VF3.16d4ea26dafff0311afe.jpg",
+    "static/media/VinFastVentoS.jpg": "/tienanhcar/static/media/VinFastVentoS.db0aaf1b5178e0ac8e72.jpg",
+    "static/media/VFWildi.jpg": "/tienanhcar/static/media/VFWildi.84142d25d72eab0ced2a.jpg",
+    "static/media/VinFastKlaraS2022.jpg": "/tienanhcar/static/media/VinFastKlaraS2022.bb69370c36fc8792746b.jpg",
+    "static/media/VF6.jpg": "/tienanhcar/static/media/VF6.d08e43c8bcd9e6f850c9.jpg",
+    "static/media/VF7.jpg": "/tienanhcar/static/media/VF7.0ea0d0f54146c88efed2.jpg",
+    "static/media/VFe34.jpg": "/tienanhcar/static/media/VFe34.4df000b8cd6c94d99adc.jpg",
+    "static/media/VinFastFeliz.jpg": "/tienanhcar/static/media/VinFastFeliz.a1b461f0502b3ba54163.jpg",
+    "static/media/VinFastTempest.jpg": "/tienanhcar/static/media/VinFastTempest.73cc136ee144f10d73fc.jpg",
+    "index.html": "/tienanhcar/index.html",
+    "main.3f161c25.css.map": "/tienanhcar/static/css/main.3f161c25.css.map",
+    "main.cb3587e2.js.map": "/tienanhcar/static/js/main.cb3587e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f161c25.css",
+    "static/js/main.cb3587e2.js"
+  ]
+}
