@@ -92,7 +92,7 @@ const cars = [
   },
   {
     id: 7,
-    name: 'VinFast VF Wildi',
+    name: 'VinFast VF Wild',
     type: 'SUV hạng D',
     price: 1000000, // Price (VND) per day
     seats: 5,
@@ -107,7 +107,7 @@ const cars = [
     id: 8,
     name: 'VinFast VF 3',
     type: 'SUV hạng A',
-    price: 720000, // Price (VND) per day
+    price: 500000, // Price (VND) per day
     seats: 5,
     description: 'Xe SUV điện hạng A nhỏ gọn, tiết kiệm và phù hợp với nhu cầu di chuyển trong thành phố.',
     image: images['VF3.jpg'],
